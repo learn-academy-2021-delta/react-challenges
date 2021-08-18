@@ -28,7 +28,7 @@ Use this command if this is the first time you have worked in the React app loca
 
 ### Cloning a Repository
 Use this command if you don't have the repository (folder) on your local machine:   
-- $ `git clone <repo-url> (pasted from clipboard on GitHub)`
+- $ `git clone <repo-url>` (pasted from clipboard on GitHub)
 
 
 ### Updating an Existing Repository
@@ -43,9 +43,10 @@ Use this command if you need to create a branch that does not exist anywhere:
 
 ### Moving to an Existing Local Branch
 Use this informational command to see what branches exist on your local machine:  
-- $ `git branch`  
+- $ `git branch`
+
 Use this command to move to a branch that exist on your local machine:  
-- $ `git checkout <branch-name>`  
+- $ `git checkout <branch-name>`
 
 
 ### Moving to an Existing GitHub Branch
