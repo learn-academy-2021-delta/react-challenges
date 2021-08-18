@@ -2,7 +2,7 @@
 
 This repository holds the React pair programming challenges for the Delta 2021 cohort.
 
-## Process Notes
+### Process Notes
 - Anything wrapped in `< >` is an indication that this will be named uniquely, the `< >` are NOT actually added to the command
 - `$` is an indication of a command line prompt, the `$` is not included
 - Anything in `( )` is informational and not included in the command
@@ -57,7 +57,7 @@ Use these commands if the repo you are working on has a branch but it is NOT on 
 
 ### Adding Local Code to GitHub
 Use these commands to add the code you have on your local machine to GitHub:  
-- $ `pwd` (make sure you are in the repository level) 
+- $ `pwd` (ensure you are in the repository level) 
 - $ `git status` (informational command, ensure you are on the correct branch and in the correct directory)
 - $ `git add .`
 - $ `git commit -m "message describing the work that was accomplished"`
