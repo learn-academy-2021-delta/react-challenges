@@ -13,7 +13,7 @@ This repository holds the React pair programming challenges for the Delta 2021 c
 ### Naming Conventions
 Branches and file names should be in all lowercase letters:
 - Branch name: `topic-initials1-initials2` (ex. state-aw-sp)
-- Project name: topic-student1-student2 (ex. state-austin-sarah)
+- Project name: `topic-student1-student2` (ex. state-austin-sarah)
 
 
 ### Informational Commands
@@ -43,7 +43,7 @@ Use this command if you need to create a branch that does not exist anywhere:
 
 ### Moving to an Existing Local Branch
 Use this informational command to see what branches exist on your local machine:  
-- $ `git branch`
+- $ `git branch`  
 Use this command to move to a branch that exist on your local machine:  
 - $ `git checkout <branch-name>`  
 
