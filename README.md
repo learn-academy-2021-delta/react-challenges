@@ -57,7 +57,7 @@ Use these commands if the repo you are working on has a branch but it is NOT on 
 
 ### Adding Local Code to GitHub
 Use these commands to add the code you have on your local machine to GitHub:  
-- $ `ls` (make sure you are in the correct directory) 
+- $ `pwd` (make sure you are in the repository level) 
 - $ `git status` (informational command, ensure you are on the correct branch and in the correct directory)
 - $ `git add .`
 - $ `git commit -m "message describing the work that was accomplished"`
