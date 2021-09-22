@@ -13,8 +13,7 @@ constructor(props){
 
 
   colorChange = () => {
-    console.log("you done pressed da button")
-    this.setState({color:"yellow"})
+    this.setState({color:["green", "purple", "red", "blue", "orange", "yellow", "pink"]})
   }
 
 render(){
@@ -22,7 +21,9 @@ render(){
 
   return(
     <>
-  <button onClick = {this.colorChange}>Color</button>
+    <div id="square">
+  <button onClick = {this.colorChange}>{this.state.color}</button>
+  </div>
 </>
     )
   }
