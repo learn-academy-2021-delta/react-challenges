@@ -8,6 +8,7 @@ class App extends Component{
   render(){
     return (
       <>
+      document.title = 'my new title';
       <h1></h1>
       <Header/>
       <Content/>
