@@ -4,19 +4,28 @@ class Square extends Component{
   constructor(props){
     super(props)
     this.state = {
-      color: "[green, blue, yellow, red, purple, orange]"
+      colorArray: [
+      "green",
+      "blue",
+      "red",
+      "orange",
+      "yellow",
+      "purple"
+      ],
+      color: ""
     }
   }
 
 changeColor = ()=> {
-  this.setState({color: this.state.color})
+  let dice = Math.floor(Math.random() * 6)
+  console.log(dice);
+  this.setState({color: this.state.colorArray[dice]})
 }
   render(){
 
     return(
       <>
-      <div className = "square" onClick={this.state.color}></div>
-      <button>Click here</button>
+      <button className = "square" onClick= {this.changeColor} >{this.state.color}</button>
       </>
     )
   }
