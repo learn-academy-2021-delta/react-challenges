@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Colorbutton from './components/Colorbutton'
+import Rgbvalue from './components/Rgbvalue'
 
 
 class App extends Component {
@@ -9,6 +10,7 @@ class App extends Component {
       <>
       <div className = "square"></div>
       <Colorbutton />
+      <Rgbvalue />
       </>
     )
   }

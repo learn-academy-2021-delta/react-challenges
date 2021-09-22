@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+// import './App.css'
+import Rgbvalue from './components/Rgbvalue'
 
 class Colorbutton extends Component {
   static defaultProps = {
@@ -7,7 +9,8 @@ class Colorbutton extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      colors: colorGenerator(this.props.boxNum)
+      // colorChange: white,
+      // colors: colorGenerator(this.props.boxNum)
       // color1: "pink",
       // color2: "red",
       // color3: "orange",
@@ -20,12 +23,36 @@ class Colorbutton extends Component {
     }
     this.colorChange = this.colorChange.bind(this)
   }
+  colorChange(c){
+    let newColor
+    do{
+      newColor = `rgb(
+      ${rgbValue()},
+      ${rgbValue()},
+      ${rgbValue()}
+    )`
+  } while(newColor === c)
+
+  this.setState(st => ({
+    colors : st.colors.map(color => {
+      if(color !== c) return color
+      return newColor
+    })
+  }))
+
+  }
+
 
   render(){
     return(
-      <>
-      <button onClick ={{color1: this.state.color1}}></button>
-      </>
+      <div className='Colorbutton'>
+      {this.state.colors.map(color => (
+        <Box color={color} colorChange = {this.colorChange}/>
+      ))}
+      </div>
+      // <h1>Color: {this.colorChange}</h1>
+      // <button onClick ={{color1: this.state.color1}}></button>
+      // </>
     )
   }
 }
