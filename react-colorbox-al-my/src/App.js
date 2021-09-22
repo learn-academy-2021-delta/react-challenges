@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
 import Colorbutton from './components/Colorbutton'
-import Rgbvalue from './components/Rgbvalue'
+import Rgbvalue from './Rgbvalue'
 
 
 class App extends Component {
