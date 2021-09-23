@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
 import './App.css'
+import Square from './components/Square'
 
 class App extends Component {
   render (){
     return (
       <>
-      <button>
-      <div className="square">
-      white
-      </div>
-      </button>
+      <Square />
       </>
     )
   }

@@ -4,25 +4,28 @@ class Square extends Component {
   constructor(props){
     super(props)
     this.state = {
-      colors: "white"
+      white: "white",
+      purple: "purple",
+      green: "green"
     }
   }
+
+
 colorName = () => {
-  this.setState{{colors: this.state.colors}}
+  this.setState({colors: this.state})
 }
 
   render (){
     return (
       <>
-      <button>
-      <div className="square">
-      white
-      </div>
-      </button>
+        <button onClick = {this.colorName}>
+          <div className="square">
+            <p>{this.state.white}</p>
+          </div>
+        </button>
       </>
     )
   }
 }
-
 
 export default Square
