@@ -1,7 +1,13 @@
-import React, {Component} from `react`
+import React, {Component} from 'react'
+
 export default class Rolls extends Component{
 
   render(){
-     return()
+     return(
+       <>
+        <h1>Roll Log</h1>
+       </>
+
+     )
    }
-    }
+}
