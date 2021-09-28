@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './App.css'
 import Dice from './components/Dice'
 import Logs from './components/Logs'
 
@@ -6,17 +7,20 @@ export default class App extends Component {
   constructor(){
     super()
     this.state = {
-      diceArray : [1, 2, 3, 4, 5, 6],
-      randomRoll: 0
+      diceArray : [],
+      index: 1
     }
   }
 handleClick = () => {
   //finding the length of the array
-  let length = this.state.diceArray.length
+  //let length = this.state.diceArray.length
+  let length = 6
   // creating a random number that uses the lengbth of the array for use later
-  let randomNum = Math.floor(Math.random() * length)
+  let randomNum = Math.ceil(Math.random() * length)
   // saves the number in state by overwriting the key:value pair randimal
-  this.setState({randomRoll: randomNum})
+  let varArray = this.state.diceArray
+  varArray.push(randomNum)
+  this.setState({index:randomNum, diceArray: varArray})
 }
 
 
@@ -27,10 +31,8 @@ handleClick = () => {
          return <FlashCard superman={value}/>
        })} */}
 
-        <Dice
-          showdice={this.state.diceArray[this.state.randomRoll]}
-          click={this.handleClick}
-        />
+        <Dice number={this.state.diceArray} click={this.handleClick}/>
+        <Logs array={this.state.diceArray}/>
       </>
     )
   }
