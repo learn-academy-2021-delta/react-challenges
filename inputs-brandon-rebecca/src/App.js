@@ -5,7 +5,7 @@ export default class App extends Component{
   constructor(){
     super()
     this.state = {
-      userInput: " "
+      userInput: ""
     }
   }
 
@@ -39,6 +39,15 @@ export default class App extends Component{
           userInput = {this.state.userInput}
         />
 
+        <h2>{this.state.userInput.split("").map((index) => {
+          if (index %3 === 0) {
+            return "B"
+          }else if(this.state.userInput[index - 1] === "B"){
+            return "L"
+          }else{
+            return "A"
+          }
+        })}</h2>
       </>
     )
   }
