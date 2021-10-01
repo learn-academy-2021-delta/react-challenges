@@ -7,12 +7,15 @@ class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      userInput: ''
+      userInput: '',
+      // arrayBLA:[],
+      // nextBLA: "B"
     }
   }
 handleChange = (e) => {
   this.setState({userInput: e.target.value})
 }
+
 
   render(){
     return(

@@ -7,10 +7,9 @@ class BadRobot extends Component{
       <>
       <h2>Bad Robot </h2>
       <div>{this.props.handleChange}</div>
-      <p>I hear you saying {this.props.input}. Is that correct?</p>
-        {/* <p>I hear you saying {this.props.userInput.split("").map((value) => {
+      <p>I hear you saying {this.props.input.split("").map((value) => {
           return "BLA"
-        })}. Is that correct?</p> */}
+        })}. Is that correct?</p>
       </>
     )
   }
