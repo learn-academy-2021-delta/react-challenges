@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+class Colorbutton extends Component{
+  constructor(props){
+    super(props)
+
 const rgbValue = () => {
   return Math.floor(Math.random() * 256)
 }

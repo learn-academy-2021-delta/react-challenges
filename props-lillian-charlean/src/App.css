@@ -1,0 +1,19 @@
+.diceNumber {
+  height: 300 px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: pink;
+  border: 2px solid black;
+  width: 500px
+}
+
+.eachRoll {
+  height: 300 px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: blue;
+  border: 2px solid black;
+  width: 500px
+}
