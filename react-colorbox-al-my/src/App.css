@@ -1,0 +1,16 @@
+.square {
+  border:5px solid black;
+  width: 300px;
+height: 300px;
+top: 50%;
+left: 50%;
+margin-left: 250px;
+margin-top: 200px;
+}
+
+.button {
+  width: 15px;
+  height: 15px;
+  margin-left: 300px;
+  margin-top: 300px;
+}
