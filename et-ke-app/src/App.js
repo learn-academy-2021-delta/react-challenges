@@ -9,7 +9,7 @@ class App extends Component{
   }
 
   getIP = () => {
-    fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=zGQZ72oIrUwQxVffabWUFsCDFrpLVXXklgKd7XWW")
+    fetch("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=fhaz&api_key=")
     .then(response => response.json())
     .then(payload => this.setState({nasaObj: payload}))
   }
